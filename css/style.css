@@ -1,0 +1,778 @@
+
+
+/* ? BOJE ================
+
+   ? Crvena: #F72249
+   ? Crvena hover: #e62145
+   ? Teget: #0E1B4D
+   ? Pozadina sekcija: #F7F7FD
+   ? Footer: #030919
+   ? Copyright: #101522
+
+   ? ===================== */
+
+
+
+
+   /* * GENERAL ================================ */
+   
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    }
+
+    html{
+        scroll-behavior: smooth;
+    }
+
+    body{
+        height: 8000px;
+    }
+
+    h2{
+        color:#0E1B4D;
+    }
+
+    .section-title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+
+    .section-title h2{
+        text-transform: uppercase;
+    }
+    .section-title p {
+        color: gray;
+    }
+
+    .custom-hr{
+        width: 60px;
+        height: 4px;
+        background-color: #F72249;
+    }
+
+    a{
+        transition: all .3s;
+    }
+
+    a:hover{
+        transition: all .3s;
+    }
+
+    .back-to-top{
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        background-color: #F72249;
+        border-radius: 100px;
+        width: 40px;
+        height: 40px;
+        z-index: 100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .back-to-top:hover{
+        background-color: #d61c3e;
+    }
+
+    .btn-custom{
+        color: #eeffff;
+        background-color: #e62145;
+        border-radius: 50px !important;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .btn-custom:hover{
+        color: #eeffff;
+        background-color: #a5001e;
+    }
+
+   /* * ======================================== */
+
+
+     
+
+
+
+
+
+   /* * NAVBAR ================================= */
+
+    .nav-bg{
+        background-color:#0e1b4d80;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+    }
+
+    .nav-bg .active{
+        border-bottom: 2px solid #F72249;
+    }
+
+   .cta-btn{
+       background-color: #F72249;
+       border-radius: 100px;
+       color: #fff !important;
+       padding: .5rem 1.5rem !important;
+       font-weight: 500;
+       margin-left: .5rem;
+   }
+
+   .cta-btn:hover{
+    background-color:#e62145 ;
+   }
+
+   .main-logo{
+       height: 30px;
+       width: auto;
+   }
+
+   /* * HERO SECTION ===========================  */
+
+   .hero-section{
+       background-image: url('../img/intro-bg.jpg');
+       background-size: cover;
+       background-position: center;
+       background-repeat: no-repeat;
+       height: 85vh;
+       position: relative;
+       z-index: 1;
+       color: #fff;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       background-attachment: fixed;
+   }
+
+   .hero-dark{
+       width: 100%;
+       height: 100%;
+       background-color: rgba(6, 12, 34, 0.8);
+       position: absolute;
+       top: 0;
+       left: 0;
+       z-index: 1;
+   }
+
+   .hero-content{
+       z-index: 5;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+   }
+
+   .hero-section h1{
+       text-align: center;
+   }
+
+   .red-text{
+       color: #F72249;
+   }
+
+   .hero-section p{
+       text-align: center;
+   }
+
+   .modal-btn{
+       background-color: #F72249;
+       border: none;
+       width: 50px;
+       height: 50px;
+       border-radius: 200px;
+   }
+
+   .modal-btn:hover{
+       background-color: #e62145;
+   }
+
+   .border-btn{
+       width: 60px;
+       height: 60px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       border-radius: 200px;
+       box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.479);
+       margin-bottom: 2rem;
+       margin-top: 1rem;
+   }
+
+   .outline-btn{
+       color: #fff;
+       border: 2px solid #F72249;
+       width: fit-content;
+       padding: .3rem 1.6rem;
+       border-radius: 100px;
+   }
+
+   .outline-btn:hover{
+       background-color: #F72249;
+       color: #fff;
+       text-decoration: none;
+   }
+
+   /* * ABOUT EVENT SECTION =========================== */
+
+   .about-event-section{
+       background-image: url('../img/about-bg.jpg');
+       background-size: cover;
+       background-position: center;
+       background-repeat: no-repeat;
+       color: #fff;
+       position: relative;
+       padding: 3rem 0px;
+       background-attachment: fixed;
+   }
+
+   .about-event-section h2{
+       color: #fff;
+   }
+
+   .about-event-section p {
+       margin-bottom: 0px;
+   }
+
+   .about-dark{
+       width: 100%;
+       height: 100%;
+       background-color:rgba(13, 20, 41, 0.8);
+       position: absolute;
+       top: 0;
+       left: 0;
+   }
+
+   /* * EVENT SPEAKERS ======================================== */
+
+   .event-speakers-section{
+        margin: 3.5rem 0px;
+   }
+
+   .event-card{
+       background-size: cover;
+       background-repeat: no-repeat;
+       background-position: center;
+       height: 220px;
+       width: 100%;
+       color: #fff;
+       position: relative;
+       overflow: hidden;
+   }
+
+   .event-card-title{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       background-color: rgba(6, 12, 34, 0.76);
+       padding: .9rem;
+       position: absolute;
+       bottom: -43px;
+       left: 0;
+       width: 100%;
+       transition: all .4s;
+   }
+
+   .event-card:hover .event-card-title{
+       bottom: 0px;
+       transition: all .4s;
+   }
+
+   .event-card-title a{
+       color: #fff;
+   }
+
+   .event-card-title a:hover{
+       color: #F72249;
+       text-decoration: none;
+   }
+
+   .event-card-title h6{
+       margin-bottom: 0px;
+       font-size: 1.1rem;
+   }
+
+   .event-card-title i {
+       font-size: .8rem;
+   }
+
+   .event-card-title svg{
+       margin: 0px .15rem;
+   }
+
+   /* * EVENT SECTION ========================================= */
+
+   .event-section{
+       background-color: #F7F7FD;
+       padding: 3.5rem 0px;
+   }
+
+   .event-section .nav-link{
+       border-radius: 100px;
+       padding: .4rem 5rem;
+       background-color: #0E1B4D;
+       color: #fff;
+       margin: 0px .4rem;
+       transition: all .4s;
+   }
+
+   .event-section .nav-link:hover{
+       background-color:#1c2e72 ;
+       transition: all .4s;
+   }
+
+   .event-section i{
+       color: grey;
+   }
+
+   .event-item{
+       margin-top: 2rem;
+   }
+
+   .event-section .nav-link.active{
+       background-color: #F72249;
+   }
+
+   .event-section .list-group-item{
+       background-color: transparent;
+   }
+
+   .event-item .event-img{
+       background-size: cover;
+       background-position: center;
+       background-repeat: no-repeat;
+       width: 50px;
+       height: 50px;
+       border-radius: 100px;
+       margin-right: .4rem;
+       margin-left: 1.5rem;
+   }
+
+   .event-item .list-group-item{
+        display: flex;
+        align-items: center;
+        transition: all .4s;
+        padding: 1.1rem .6rem;
+   }
+
+   .event-item .list-group-item:hover{
+       background-color: #fff;
+       transition: all .4s;
+   }
+
+   .event-item h6{
+       margin-bottom: .1rem;
+   }
+
+   .event-item h6 i{
+       color: #7a91ee;
+       font-weight: 400;
+   }
+
+   .event-item i{
+        font-size: .9rem;
+   }
+
+
+   /* * EVENT GALLERY ======================== */
+
+   .event-gallery{
+       padding: 3.5rem 0px;
+   }
+
+   .gallery-top-img{
+       background-image: url('../img/venue-info-bg.jpg');
+       background-size: cover;
+       background-position: center;
+       background-repeat: no-repeat;
+       width: 100%;
+       height: 100%;
+       color: #fff;
+       position: relative;
+       padding: 3rem;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }    
+
+   .bg-darken{
+       width: 100%;
+       height: 100%;
+       position: absolute;
+       left: 0;
+       top: 0;
+       background-color: rgba(13, 20, 41, 0.8);
+       z-index: 0;
+   }
+
+   .gallery-small-img{
+       background-size: 100%;
+       background-repeat: no-repeat;
+       background-position: center;
+       width: 100%;
+       height: 190px;
+       transition: all .4s;
+   }
+
+   .gallery-small-img:hover{
+       background-size: 120%;
+       transition: all .4s;
+   }
+
+   .event-gallery [class^="col-"]{
+       padding: 2px;
+   }
+
+   /* * HOTEL IMG */
+
+   .hotel-section{
+       background-color: #F7F7FD;
+       padding: 3.5rem 0px;
+   }
+
+   .hotel-img{
+       background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 220px;
+       transition: all .4s;
+   }
+
+   .hotel-card{
+       background-color: #fff;
+       width: 100%;
+       height: fit-content;
+       border: 1px solid #f0f0f0;
+   }
+
+   .hotel-card-body{
+       padding: 1rem;
+   }
+
+   .hotel-card:hover .hotel-img{
+       background-size: 120%;
+       transition: all .4s;
+   }
+
+
+   /* * GALLERY SECTION */
+
+   .gallery-section{
+       padding: 3.5rem 0px;
+   }
+
+   .gallery-section .nav-link{
+       color: #0E1B4D;
+   }
+
+   .gallery-section .nav-link.active{
+       background-color: transparent;
+       color: #F72249;
+       font-weight: 500;
+   }
+
+   .gallery-img{
+       height: 220px;
+       background-size: cover;
+       background-repeat: no-repeat;
+       background-position: center;
+       padding: 1rem;
+       overflow: hidden;
+   }
+
+   .gallery-img .img-hover{
+       width: 100%;
+       background-color: rgba(13, 20, 41, 0.8);
+       color: #fff;
+       padding: 1rem;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       position: relative;
+       top: -100px;
+       transition: all 2s;
+   }
+
+   .gallery-img:hover .img-hover{
+       top: 0px;
+       transition: all .4s;
+   }
+
+   .gallery-img .img-hover h6,p{
+       margin: 0;
+   }
+
+   .gallery-img .img-hover p{
+       font-size: .8rem;
+   }
+
+   .gallery-img .img-hover a{
+       color: #fff;
+   }
+
+   .gallery-img .img-hover a:hover{
+    color: #F72249;
+}
+
+/* * SPONSORS */
+
+    .sponsors-section{
+        background-color: #f6f7fd;
+        padding: 3.5rem 0px;
+    }
+
+    .support-logo{
+        width: 100%;
+        height: 130px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-right:1px solid #ebebeb ;
+        border-bottom:1px solid #ebebeb ;
+        padding: 1rem;
+    }
+
+    .support-logo img{
+        transition: all .4s;
+    }
+
+    .support-logo:hover img{
+        transform: scale(1.3);
+        transition: all .4s;
+    }
+
+    .sponsors-section .row-border{
+        border-top:1px solid #ebebeb;
+        border-left: 1px solid #ebebeb;
+        background-color: #fff;
+    }
+
+
+    /* FAQ---------- */
+
+    .faq-section{
+        padding: 3.5rem 0px;
+    }
+
+    .faq-questions .card-header{
+        background-color: transparent;
+        border: none;
+        padding-left: 0px;
+    }
+
+    .faq-questions .card{
+        border: none;
+        border-bottom: 1px solid rgb(223, 203, 203) !important;
+    }
+
+   
+   
+   .faq-questions .card-header .btn{
+       padding-left: 0px;
+
+   }
+
+   .faq-questions .card-header .btn-link{
+       font-weight: 500;
+       color: red;
+   }
+
+   .faq-questions .card-header .btn-link.collapsed{
+       color: black;
+   }
+
+
+   /* NEWSLETTER */
+
+   .newsletter{
+       background-image: url('../img/subscribe-bg.jpg');
+       padding: 3.5rem 0px;
+       background-attachment: fixed;
+       background-position:center;
+       background-repeat: no-repeat;
+       background-size: cover;
+       position: relative;
+    
+    }
+   
+
+   .newsletter input{
+    border-radius: 100px !important ;
+    padding-left: 1.5rem;
+    margin-right: .7rem;
+}
+
+.newsletter-dark{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(13, 20, 41, 0.8);
+    width: 100%;
+    height: 100%;
+}
+
+
+.newsletter .section-title h2,p{
+    color: #eeffff  ;
+}
+
+.newsletter .section-title p{
+    color: #eeffff;
+}
+
+
+/* BUY TICKETS */
+
+
+.buy-tickets-section{
+    padding: 3.5rem 0px;
+    background-color: #F7F7FD;
+}
+
+.pricing-card{
+    background-color: #eeffff;
+    box-shadow: 0px 0px 25px rgba(0,0,0, .1);
+    border-radius: 4px;
+    padding: 1.5rem;
+    width: 100%;
+    height: fit-content;
+}
+
+.pricing-card .pricing-header{
+    text-align: center;
+    padding: 1rem 0px;
+    border-bottom: 1px solid #ebebeb;
+
+}
+
+.pricing-card .pricing-header span{
+    text-transform: uppercase;
+    color: gray;
+    
+}
+
+.pricing-card .pricing-header h1{
+    font-weight: 400;
+    margin-top: .6rem;
+}
+
+.pricing-card .pricing-body{
+    padding: 1rem;
+    border-bottom: 1px solid #ebebeb;
+
+
+}
+
+.pricing-card ul{
+    list-style-position: inside;
+}
+
+.pricing-card .not-included{
+    color: rgb(146, 146, 146);
+}
+
+.pricing-card ul, li{
+    margin-bottom: .7rem;
+}
+
+.pricing-card ul,li:last-child(){
+    margin-bottom: 0px;
+
+}
+
+.pricing-card .pricing-footer{
+    padding: 1rem ;
+    padding-bottom: 0px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-text {
+    color: #1c2e72;
+    text-transform: uppercase;
+    
+}
+
+.simple{
+    text-align: center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+   
+}
+
+/*  FOOTER SECTION */
+  .footer-section{
+      background-color:#030919 ;
+      display: flex;
+      align-items:center;
+      justify-content: space-between;
+      color: #eeffff;
+      width:fit-content;
+      height: 400px; 
+      padding: 3rem 80px;
+       
+      
+  }
+
+  .first-footer-section img{
+    height: 40px;
+    margin: 0rem 15px;
+  }
+/* 
+  .useful-links {
+      margin: 1rem;
+      text-transform: uppercase;
+      width: 100%;
+      height: 200px;
+     
+  } */
+
+
+  .useful-links .custom-hr{
+       color: red;
+       width: 100%;
+       height: 2px;
+       
+  }
+
+  .useful-links li{
+      text-transform:none;
+    border-bottom: 1px solid gray;
+  }
+
+  .contact-us{
+      justify-content: space-between;
+  }
+
+  .drustvene-mreze{
+      display: flex;
+      padding: 1rem 0px;
+      margin: .2rem ;
+      align-items: center;
+      
+  }
+
+  .drustvene-mreze a{
+      border: 5px  gray ;
+     border-radius: 50px gray;
+     color: #eeffff;
+  }
+
+  .drustvene-mreze a:hover{
+      background-color: gray;
+      border-radius: 350px;
+      color: blue;
+  }
+
+
